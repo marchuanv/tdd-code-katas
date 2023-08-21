@@ -1,0 +1,19 @@
+{
+  "type": "module",
+  "scripts": {
+    "lint": "node node_modules/eslint/bin/eslint.js ./application/**.js",
+    "lint-fix": "npm run lint -- --fix"
+  },
+  "devDependencies": {
+    "eslint": "^8.32.0",
+    "eslint-config-semistandard": "^16.0.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-n": "^15.6.1",
+    "eslint-plugin-promise": "^6.1.1",
+    "jasmine": "^4.6.0"
+  },
+  "dependencies": {
+    "nodemon": "^2.0.22"
+  }
+}
