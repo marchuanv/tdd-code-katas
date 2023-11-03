@@ -2,7 +2,8 @@
   "type": "module",
   "scripts": {
     "lint": "node node_modules/eslint/bin/eslint.js ./application/**.js",
-    "lint-fix": "npm run lint -- --fix"
+    "lint-fix": "npm run lint -- --fix",
+    "test": "node ./spec/string-calculator.mjs"
   },
   "devDependencies": {
     "eslint": "^8.32.0",
