@@ -3,7 +3,7 @@
   "scripts": {
     "lint": "node node_modules/eslint/bin/eslint.js ./application/**.js",
     "lint-fix": "npm run lint -- --fix",
-    "test": "node ./spec/string-calculator.mjs"
+    "test": "npx jasmine"
   },
   "devDependencies": {
     "eslint": "^8.32.0",
@@ -16,5 +16,12 @@
   },
   "dependencies": {
     "nodemon": "^2.0.22"
+  },
+  "nodemonConfig": {
+    "ignore": [
+      "**/test/**",
+      "**/docs/**"
+    ],
+    "delay": 2500
   }
 }

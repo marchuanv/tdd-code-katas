@@ -1,7 +1,4 @@
-describe("Heading", () => {
-    describe("when ", () => {
-        it("should ", () => {
-            fail('Not Implemented');
-        });
+describe("given when", () => {
+    it("should return 0 ", () => {
     });
 });
